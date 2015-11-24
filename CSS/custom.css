@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #bcf5bc;
+}
+
+a, a:link  {
+    color: #00aa00;
+}
+
+a:hover, a:active, a:focus{
+    color: #008800;
+}
+
+.photo {
+    float: right;
+    height: auto;
+    width: 200px;
+    margin: 0 0 20px 20px;
+}
+
+.work img, .school img{
+    margin : 0 20px 0 0;
+    width:100px; 
+    height: auto;
+    min-height: 20px;
+    max-height: 70px;
+}
+
+.work h4{
+   	margin : 0px 0 25px 0;
+}
+
+.work h2{
+    margin : 0px 0 0px 0;
+}
+
+.work ul{
+    margin : 12px 0 0px 0;
+}
+
+
+.work-bilan{
+    display : inline-block;
+    border-bottom : 1px solid #00aa00;
+    padding : 12px 0 12px 0;
+    width: 100%;
+ }
+
+ .work-bilan p{
+    display : inline-block;
+
+ }
+
+ .langues{
+    text-align: left;
+ }
+ .langues h2{
+    margin : 30px 0 10px 0;
+ }
+
+ .langue{
+    border-bottom : 1px solid #00aa00;
+    padding : 12px 0 12px 0;
+ }
+
+.diploma{
+    border-top : 1px solid #00aa00;
+    padding : 20px 0 0 0;
+}
+
+.diploma-date{
+    width : 160px;
+    text-align: center;
+}
+
+.container{
+	max-width : 1080px;
+	margin : 20px auto 0px;
+    text-align: justify;   
+}
+
+.main{
+    max-width : 1080px;
+    margin : 20px auto 0px;
+    text-align: justify;   
+    background-color: #fff;
+}
+
+.main-content{
+    padding: 0px 20px 20px 20px;
+}
+
+.work-duration{
+    width : 130px;
+    text-align: center;
+    margin : 25px 0 0 0;
+}
+
+.school-duration{
+    width : 180px;
+    text-align: center;
+    margin : 25px 0 0 0;
+}
+
+.skill{
+    padding: 0 5px 0 5px;
+}
+
+
+
+.stuck {
+    position: fixed;
+    max-width : 340px;
+    padding : 20px;
+    border-left :  1px solid #ddd;
+}
+
+.Icon, .Label-contact{
+    text-align: center;
+}
+
+.contact-box{
+    margin: 30px;
+    border: 1px solid  #d9dbda;
+    border-radius : 25px;
+}
+
+.block {
+    display: inline-block;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+    color: #9EFD38;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.sidebar{
+    border-left :  1px solid #ddd;
+}
+
+.tab-container{
+    margin:0px;
+}
+
+.footer {
+    text-align: center;
+    margin : 20px;
+}
+
+.experience-skills{
+    padding-left: 20px;
+    text-align: left;
+}
