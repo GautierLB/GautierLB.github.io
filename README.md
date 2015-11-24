@@ -1,4 +1,4 @@
-# GautierLB
+# Gautier Le Bissonnais
 
-Mon CV en ligne.
+Ce repository a été créer afin d'héberger mon cv en ligne.
 
