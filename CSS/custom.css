@@ -116,6 +116,14 @@ a:hover, a:active, a:focus{
     border-left :  1px solid #ddd;
 }
 
+.hitBottom{
+    position: fixed;
+    bottom: 100px;
+    max-width : 340px;
+    padding : 20px;
+    border-left :  1px solid #ddd;
+}
+
 .Icon, .Label-contact{
     text-align: center;
 }
@@ -154,3 +162,4 @@ a:hover, a:active, a:focus{
     padding-left: 20px;
     text-align: left;
 }
+
