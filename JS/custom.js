@@ -1,6 +1,7 @@
 
-if ($(window).height() < '992')
+if ($(window).width() > '992')
 {
+	console.log('Sticked');
 	var sticky = new Waypoint.Sticky({
 		element: $('.sticky')[0]
 	})
@@ -8,18 +9,19 @@ if ($(window).height() < '992')
 
 
 $(document).ready(function() {
-
- 	if ($(window).height() < '992')
- 	{
- 		var scrollVal = $(this).scrollTop();
+	$(window).scroll(function() {	
+		var scrollVal = $(this).scrollTop();
+		console.log(scrollVal);
 	    if ( scrollVal > ($(document).height() - $(window).height()) - 100) {
-	            $('.sticky').removeClass('stuck'); 
-	            $('.sticky').addClass('hitBottom');            
+	    	console.log('hitBottom');
+	        $('.sticky').removeClass('stuck'); 
+	        $('.sticky').addClass('hitBottom');            
 	    }
 	    else {
-        $('.sticky').removeClass('hitBottom'); 
-       	$('.sticky').addClass('stuck');    
-    }
+	        $('.sticky').removeClass('hitBottom'); 
+	       	$('.sticky').addClass('stuck');    
+	   }
+	});
 });
 
 $(function(){
