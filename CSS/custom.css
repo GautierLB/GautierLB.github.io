@@ -19,6 +19,12 @@ a:hover, a:active, a:focus{
     margin: 0 0 20px 20px;
 }
 
+.photo_sd{
+    height: auto;
+    width: 200px;
+    margin: auto;
+}
+
 .work img, .school img{
     margin : 0 20px 0 0;
     width:100px; 

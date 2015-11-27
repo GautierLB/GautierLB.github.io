@@ -1,24 +1,25 @@
 
-var sticky = new Waypoint.Sticky({
-  element: $('.sticky')[0]
-})
+if ($(window).height() < '992')
+{
+	var sticky = new Waypoint.Sticky({
+		element: $('.sticky')[0]
+	})
+}
+
 
 $(document).ready(function() {
 
-     $(window).scroll(function() {
-        var scrollVal = $(this).scrollTop();
-	    console.log('Scrollval = ' + scrollVal + ' Doc.height = ' + $(document).height() + ' Window.height = ' + $(window).height());
-	    console.log('Scrollval = ' + ($(document).height() - $(window).height() - 500));
+ 	if ($(window).height() < '992')
+ 	{
+ 		var scrollVal = $(this).scrollTop();
 	    if ( scrollVal > ($(document).height() - $(window).height()) - 100) {
 	            $('.sticky').removeClass('stuck'); 
 	            $('.sticky').addClass('hitBottom');            
 	    }
 	    else {
-	        $('.sticky').removeClass('hitBottom'); 
-	       	$('.sticky').addClass('stuck');    
-	    }   
-   });
-
+        $('.sticky').removeClass('hitBottom'); 
+       	$('.sticky').addClass('stuck');    
+    }
 });
 
 $(function(){
