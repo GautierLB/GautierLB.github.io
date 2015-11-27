@@ -9,19 +9,20 @@ if ($(window).width() > '992')
 
 
 $(document).ready(function() {
-	$(window).scroll(function() {	
-		var scrollVal = $(this).scrollTop();
-		console.log(scrollVal);
-	    if ( scrollVal > ($(document).height() - $(window).height()) - 100) {
-	    	console.log('hitBottom');
-	        $('.sticky').removeClass('stuck'); 
-	        $('.sticky').addClass('hitBottom');            
-	    }
-	    else {
-	        $('.sticky').removeClass('hitBottom'); 
-	       	$('.sticky').addClass('stuck');    
-	   }
-	});
+	if ($(window).width() > '992')
+	{
+		$(window).scroll(function() {	
+			var scrollVal = $(this).scrollTop();
+		    if ( scrollVal > ($(document).height() - $(window).height()) - 100) {
+		        $('.sticky').removeClass('stuck'); 
+		        $('.sticky').addClass('hitBottom');            
+		    }
+		    else {
+		        $('.sticky').removeClass('hitBottom'); 
+		       	$('.sticky').addClass('stuck');    
+		   }
+		});
+	}
 });
 
 $(function(){
